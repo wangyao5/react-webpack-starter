@@ -49,7 +49,7 @@ module.exports = function (options) {
                 }, //prod
                 compress: {
                     screw_ie8: true,
-                    warnings: false, 
+                    warnings: false,
                     conditionals: true,
                     unused: true,
                     comparisons: true,
@@ -60,7 +60,7 @@ module.exports = function (options) {
                     join_vars: true,
                     negate_iife: false // we need this for lazy v8
                },
-            }),            
+            }),
             new webpack.DefinePlugin({
                 'ENV': JSON.stringify(METADATA.ENV),
                 'process.env': {
@@ -70,6 +70,6 @@ module.exports = function (options) {
                 LOCAL_ROOT: JSON.stringify("http://www.baidu.com"),
                 ROOT: JSON.stringify("http://www.xxx.com"),
             })
-        ]	    
+        ]
     });
 };

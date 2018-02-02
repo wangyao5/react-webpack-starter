@@ -97,7 +97,7 @@ module.exports = function (options) {
           loader: 'file-loader',
           options: {
             name: '[path]-[name].[ext]?[hash]'
-          }  
+          }
         },
 
         /* File loader for supporting fonts, for example, in CSS files.
@@ -107,7 +107,7 @@ module.exports = function (options) {
           loader: 'file-loader',
           options: {
             name: '[path]-[name].[ext]?[hash]'
-          } 
+          }
         },
 
         {
