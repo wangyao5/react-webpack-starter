@@ -115,7 +115,7 @@ module.exports = function (options) {
           exclude:/node_modules/,
           loader: "babel-loader", // Do not use "use" here
           query: {
-            presets: ['es2015','react','stage-1'],
+            presets: ['env','react','stage-1'],
             plugins: ['transform-decorators-legacy','transform-decorators']
           }
         }
